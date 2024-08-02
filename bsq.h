@@ -23,4 +23,5 @@ typedef struct mapper map;
 
 int	ft_atoi(char *str);
 int	ft_strcmp(char *s1, char *s2);
+char	*ft_strcpy(char *src, char *dest);
 #endif
