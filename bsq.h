@@ -7,7 +7,9 @@
 
 #include <stdio.h>
 
-struct mapper
+#define READ_SIZE 1024
+
+struct m_map
 {
 	int	rows;
 	int	columns;
@@ -19,9 +21,11 @@ struct mapper
 	int	area;
 	char	**av;
 };
-typedef struct mapper map;
+typedef struct m_map mp;
 
 int	ft_atoi(char *str);
 int	ft_strcmp(char *s1, char *s2);
 char	*ft_strcpy(char *src, char *dest);
+mp	*parcer(char *file_name);
+int	ft_strlen(char *str);
 #endif
