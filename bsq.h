@@ -28,4 +28,6 @@ int	ft_strcmp(char *s1, char *s2);
 char	*ft_strcpy(char *src, char *dest);
 mp	*parcer(char *file_name);
 int	ft_strlen(char *str);
+void	ft_collector(mp *map);
+void	ft_print_map(mp *map);
 #endif

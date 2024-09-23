@@ -63,3 +63,37 @@ int	ft_strlen(char *str)
 		i++;
 	return (i);
 }
+
+
+void	ft_collector(mp *map)
+{
+	int	i;
+
+	i = 0;
+	while (i < map->columns)
+	{
+		free(map->av[i]);
+		i++;
+	}
+	free(map->av);
+	free(map);
+}
+
+void	ft_print_map(mp *map)
+{
+	int	i;
+	
+	i = 0;
+	while (i < map->columns)
+	{
+		printf("%s\n", map->av[i]);
+		i++;
+	}
+}
+
+
+
+
+
+
+
